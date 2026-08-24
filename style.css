@@ -744,3 +744,31 @@ footer p {
     }
 
 }
+
+/* Profile Image Styling */
+
+.hero-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #00ff88;
+    box-shadow: 0 0 20px #00ff88,
+                0 0 40px #00ff88,
+                0 0 80px rgba(0, 255, 136, 0.5);
+    transition: 0.4s ease;
+}
+
+.hero-image img:hover {
+    transform: scale(1.05) rotate(2deg);
+    box-shadow: 0 0 30px #00ff88,
+                0 0 60px #00ff88,
+                0 0 100px #00ff88;
+}
